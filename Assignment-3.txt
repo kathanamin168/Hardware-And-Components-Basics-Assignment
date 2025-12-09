@@ -1,0 +1,74 @@
+Que-1. What is the first step in the troubleshooting process?
+Ans. (B) Identifying the problem
+
+Que-2. Which of the following tools is commonly used to diagnose hardware issues by testing electrical connections?
+Ans. (C) Multimeter
+
+Que-3. Which windows utility can be used to view system logs, monitor performance, and diagnose hardware and software issues?
+Ans. (C) Event viewer
+
+Que-4. Safe mode is a diagnostic mode in windows that loads only essential system services and drivers, allowing users to troubleshoot and fix problems with the operating system.
+Ans. True
+
+Que-5. A system restore point is a snapshot of the computer's system files, registry, and configuration settings at a specific point in time, which can be used to revert the system to a previous state if problem occur.
+Ans. True
+
+Que-6. Ping is a command-line utility used to test network connectivity by sending ICMP echo requests to target device and waiting for ICMP echo replies.
+Ans. True
+
+Que-7. Describe the steps involved in troubleshooting a computer that fails to boot into the operating system.
+Ans. 1. Identify the problem – Note error messages, beeps, or boot stage failure.
+
+2. Check power and connections – Verify cables, RAM, and drives are properly connected.
+
+3. Access BIOS/UEFI – Ensure the boot drive is detected and boot order is correct.
+
+4. Boot in Safe Mode or Recovery – Try Safe Mode or use recovery tools.
+
+5. Run Startup Repair/System Restore – Fix corrupted boot files or restore system   settings.
+
+6. Test hardware – Check RAM, hard drive, and power supply.
+
+7. Reinstall OS (if needed) – As a last resort, reinstall the operating system.
+
+Que-8. Demonstrate how to troubleshooting network connectivity issues on a windows computer using the ipconfig command.
+Ans. Step-by-Step Practical Walkthrough
+1. Open Command Prompt
+Press Win + R → type CMD → hit Enter.
+Or search “Command Prompt” in the Start menu and select Run as Administrator (recommended).
+
+2. Check you current network configuration
+run : ipconfig
+Interpretation:
+IPv4 Address → your computer’s IP on the local network.
+Default Gateway → your router’s IP.
+Subnet Mask → defines your local network range.
+If you see something like 169.254.x.x, that’s a self-assigned IP — meaning your PC didn’t get an address from the router (DHCP issue).
+
+3. Check detailed network info
+run : ipconfig/all
+
+4. Release and Renew IP address
+run : ipconfig/release
+      ipconfig/renew
+
+5. Flush DNS Cache
+ipconfig/flushdns
+
+6. Verify the fix
+Test you network again
+ping 8.8.8.8
+if that works
+ping google.com
+
+If 8.8.8.8 works but google.com fails -> DNS Problem
+If both fail -> gateway or ISP issue.
+
+Que-9. Discuss the importance of effective communication skills in a helpdesk or technical support role.
+Ans. Effective communication is one of the most important skills in a helpdesk or technical support role. Technical knowledge alone is not enough; support professionals must also know how to clearly explain complex problems and solutions to users who may not be familiar with technical terms. Good communication ensures that the technician understands the issue correctly and provides accurate assistance without confusion or delay.
+
+Empathy and patience are equally vital. Many users contact support when they are frustrated or stressed. A calm and respectful tone can help reduce tension, making the user feel heard and valued. This builds trust and improves the overall support experience.
+
+Furthermore, effective communication within the team helps in quick problem-solving and efficient ticket handling. When information is passed clearly, mistakes are minimized and productivity increases.
+
+In conclusion, strong communication skills make a helpdesk professional not just a problem-solver but also a bridge between technology and people. It turns technical support from a simple service into a positive, human experience.
